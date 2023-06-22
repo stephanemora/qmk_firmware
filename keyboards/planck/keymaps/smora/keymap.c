@@ -50,13 +50,16 @@ enum planck_keycodes {
 #define FRENCH_BSPC  LT(_FRENCH, KC_BSPC)
 #define NUM          MO(_NUM)
 #define I3_BSPC      LT(_I3, KC_BSPC)
+#undef  I3
 #define I3           MO(_I3)
 #define NAV          TT(_NAV)
 #define NAV_SPC      LT(_NAV, KC_SPC)
+#define NUM_BSPC     LT(_NUM, KC_BSPC)
 #define FRENCH       OSL(_FRENCH)
-#define NUM_B#define FRENCH_ENT   LT(_FRENCH, KC_ENT)
+#define FRENCH_ENT   LT(_FRENCH, KC_ENT)
 #define SYM_ESC      LT(_SYM, KC_ESC)
-#define V_FRENCH     LT(_FRENCH, FR_V)SPC     LT(_NUM, KC_BSPC)
+#define V_FRENCH     LT(_FRENCH, FR_V)
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -80,10 +83,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = LAYOUT_planck_grid(
-    _______, QK_BOOT, DEBUG,   RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD,  RGB_VAI, RGB_VAD, KC_DEL ,
-    _______, _______, MU_MOD,  AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, _______, COLEMAK,  _______, _______, KC_SECRET_1,
-    _______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  TERM_ON, TERM_OFF, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______
+    _______, QK_BOOT, DB_TOGG, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, KC_DEL ,
+    _______, _______, MU_NEXT, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, _______,  COLEMAK, _______,  _______,  _______,
+    _______, AU_PREV, AU_NEXT, MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 )
 
 };
