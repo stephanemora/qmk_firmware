@@ -11,8 +11,8 @@
  * `-----------------------------------------------------------------------------------------------'
  */
 [_FRENCH] = LAYOUT_planck_grid(
-    _______, G(FR_AMPR),    G(FR_EACU), G(FR_DQUO), G(FR_QUOT), G(FR_LPRN), G(FR_MINS), KC_TAB,         G(KC_UP),    _______,    KC_DEL, _______,
-    _______, G(FR_A),       G(FR_R),    _______,    G(FR_F),    _______,    KC_CAPS,    G(KC_LEFT),     G(KC_DOWN),  G(KC_RGHT), FR_DIAE, _______,
+    _______, G(FR_AMPR),    G(FR_EACU), G(FR_DQUO), G(FR_QUOT), G(FR_LPRN), G(FR_MINS), KC_TAB,         G(KC_UP),   _______,    KC_DEL,  _______,
+    _______, G(FR_A),       G(FR_R),    _______,    G(FR_F),    _______,    KC_CAPS,    G(KC_LEFT),     G(KC_DOWN), G(KC_RGHT), FR_DIAE, _______,
     _______, _______,       G(FR_X),    _______,    G(FR_D),    _______,    _______,    G(FR_N),        _______,    _______,    FR_EURO, _______,
     _______, _______,       _______,    _______,    _______,    _______,    G(KC_ENT),  _______,        KC_MNXT,    KC_MPLY,    KC_VOLD, KC_VOLU
 ),
